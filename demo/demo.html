@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script src="../lib/mask.js"></script>
+	<style>
+	body{
+		background : url( tiles.png );
+	}
+	</style>
+</head>
+<body>
+	<img id="bg-mask" src="background.jpg" mask="background-mask.png">
+	<img id="streak-mask" src="streak.jpg" mask="streak-mask.png">
+
+	<script>
+	new CanvasMask( document.getElementById( 'bg-mask' ) );
+	new CanvasMask( document.getElementById( 'streak-mask' ) );
+	</script>
+</body>
+</html>
